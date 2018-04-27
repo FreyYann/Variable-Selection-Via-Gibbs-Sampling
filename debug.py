@@ -36,7 +36,7 @@ maxiters=5000
 data=df.values
 y=target.values
 pi,c,lambda_gamma,v=1/2, 10 ,1,0#data.shape[0]
-R=df.corr().values
+R=df.cov().values
 #R=np.zeros((5,5))
 #np.fill_diagonal(R,1)
 
